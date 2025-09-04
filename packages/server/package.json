@@ -1,0 +1,19 @@
+{
+  "name": "@pluto/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^1.10.1",
+    "@connectrpc/connect": "^1.4.0",
+    "@connectrpc/connect-node": "^1.4.0",
+    "@pluto/proto": "workspace:*",
+    "ws": "^8.18.0",
+    "playwright": "^1.47.0",
+    "tsx": "^4.16.0"
+  }
+}

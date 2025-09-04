@@ -1,0 +1,13 @@
+{
+  "name": "pluto-streaming-monorepo",
+  "private": true,
+  "packageManager": "pnpm@8.6.9",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "./run.sh",
+    "build": "echo nothing to build at root",
+    "format": "echo no formatter configured"
+  }
+}

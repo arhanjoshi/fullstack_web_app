@@ -1,0 +1,20 @@
+node_modules/
+
+# Build outputs
+**/dist/
+*.log
+.DS_Store
+
+# Next.js
+packages/web/.next/
+
+# Playwright caches
+playwright/.cache/
+**/.cache/
+
+# Env files
+.env
+.env.*
+
+# pnpm store (optional local)
+.pnpm-store/

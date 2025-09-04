@@ -1,0 +1,17 @@
+syntax = "proto3";
+package pluto;
+
+message SubscribeRequest {
+  string ticker = 1; // e.g., BTCUSD
+}
+
+message PriceUpdate {
+  string ticker = 1;
+  double price = 2;
+  string isoTime = 3; // ISO timestamp
+}
+
+service PriceService {
+  rpc SubscribeTicker(SubscribeRequest) returns (stream PriceUpdate);
+}
+
